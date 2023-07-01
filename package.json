@@ -1,0 +1,16 @@
+{
+  "name": "tabnews-study-case",
+  "version": "1.0.0",
+  "description": "A real world news letter (https://www.tabnews.com.br/ ) study case",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
