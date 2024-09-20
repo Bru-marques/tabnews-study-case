@@ -5,3 +5,5 @@ services:
       - "../.env.development"
     ports:
       - "5432:5432"
+
+      # docker compose -f infra/compose.yaml up
