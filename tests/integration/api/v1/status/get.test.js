@@ -1,5 +1,7 @@
+
+const baseUrl = 'http://localhost:3000/api/v1/status'
 test("GET to /api/v1/status should return 200", async () => {
-  const response = await fetch("http://localhost:3000/api/v1/status");
+  const response = await fetch(baseUrl);
   expect(response.status).toBe(200);
 
   const responseBody = await response.json();
@@ -12,5 +14,9 @@ test("GET to /api/v1/status should return 200", async () => {
   expect(responseDataBase.max_connections).toEqual(100 );
   expect(responseDataBase.opened_connections).toEqual(1);
 
-  console.log("responseBody:", responseBody);
 });
+
+test.only('SQL injection test', async () => {
+  await fetch(`${baseUrl}?databaseName=local_db`);
+  await fetch(`${baseUrl}?databaseName=`)
+})
