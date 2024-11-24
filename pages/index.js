@@ -1,12 +1,9 @@
-function Home() {
+import Home from "./_app";
+
+function App() {
   return (
-    <div>
-      <h1>TabNews - study case</h1>
-      <p>
-        A study case project to practice coding skills.
-      </p>
-    </div>
+    <Home />
   );
 }
 
-export default Home;
+export default App;
