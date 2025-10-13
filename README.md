@@ -1,3 +1,3 @@
-# tabnews-study-case
+# clone-tabnews
 
-A real world news letter (https://www.tabnews.com.br/ ) study case
+Implementação do https://www.tabnews.com.br para o https://curso.dev
