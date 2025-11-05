@@ -3,7 +3,7 @@ name: Automated Tests
  on: pull_request
 
  jobs:
-  jet:
+  jest:
     name Jest Ubuntu
     runs-on: ubuntu-latest
     steps:
@@ -14,5 +14,5 @@ name: Automated Tests
           node-version: "lts/hydrogen"
       
       - run: npm ci
-      
+
       - run: npm test
